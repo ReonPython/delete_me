@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head charset="utf-8">
+        <title>django_app</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'diary/css/base.css' %}">
+        <script src="{% static 'diary/js/base.js' %}"></script>
+    </head>
+    <body>
+        <h1><a href="{% url 'diary:index' %}">UTAUの日記</a></h1>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
